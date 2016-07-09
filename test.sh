@@ -1,0 +1,1 @@
+curl --form 'consumer_key=1234:1234&amount=1000&email=info@mail.com&name=buyer+name&orderid=12345&callback=http://127.0.0.1/simple/callback.php&mobile=09120000000&description=Description' http://rashapay.com/srv/rest/rpaypaymentrequest
