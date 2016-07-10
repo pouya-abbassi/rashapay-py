@@ -11,8 +11,7 @@
 
 __author__ = "Pouya Abbassi"
 __copyright__ = "Copyright 2016, http://RashaPay.com"
-__credits__ = ["Nima Barzegar",
-                            "Matthew Wakefield"]
+__credits__ = ["Nima Barzegar"]
 __license__ = "GPL-v3 https://www.gnu.org/licenses/gpl-3.0.en.html"
 __version__ = "0.1.0"
 __maintainer__ = "Pouya Abbassi"
