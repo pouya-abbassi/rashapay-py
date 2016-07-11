@@ -39,23 +39,23 @@ def rashapay():
 	parsed_json = json.loads(obj)	# Parsing json object
 
 	if parsed_json['status'] == '11' :
-		print 'مشخصات ارسالی نادرست است.'							# Incorrect variables
+		print ('مشخصات ارسالی نادرست است.')							# Incorrect variables
 	elif parsed_json['status'] == '12' :
-		print 'اتصال به وب‌سرویس ناموفق است.'						# Failed to connect to the WebService
+		print ('اتصال به وب‌سرویس ناموفق است.')						# Failed to connect to the WebService
 	elif parsed_json['status'] == '13' :
-		print 'IP سایت درخواست دهنده با IP ثبت شده در سیستم مطابقت ندارد.'			# Your IP is not the same as what is stored in our DataBase
+		print ('IP سایت درخواست دهنده با IP ثبت شده در سیستم مطابقت ندارد.')			# Your IP is not the same as what is stored in our DataBase
 	elif parsed_json['status'] == '14' : 
-		print 'شماره‌ی سفارش ارسالی (order_id) تکراری است. لطفا دوباره امتحان کنید.'	# OrderID is not unique and was used before
+		print ('شماره‌ی سفارش ارسالی (order_id) تکراری است. لطفا دوباره امتحان کنید.')	# OrderID is not unique and was used before
 	elif parsed_json['status'] == '15' :
-		print 'فرمت مبلغ نامعتبر است.'								# Price format is invalid
+		print ('فرمت مبلغ نامعتبر است.')								# Price format is invalid
 	elif parsed_json['status'] == '16' :
-		print 'فرمت ایمیل صحیح نیست.'								# Email format is invalid
+		print ('فرمت ایمیل صحیح نیست.')								# Email format is invalid
 	elif parsed_json['status'] == '17' :
-		print 'آدرس callback تعریف نشده است.'							# No CallBack url was declared
+		print ('آدرس callback تعریف نشده است.')							# No CallBack url was declared
 	elif parsed_json['status'] == 'response':
 		print ("http://rashapay.com/srv/gatewaychannel/requestpayment/" + parsed_json['token'])	# Everything is fine, Getting the "token" part of json data and appending it to the payment url
 	else :
-		print parsed_json['status']								# Contact us at http://rashapay.com//about.php?#contactus
+		print (parsed_json['status'])								# Contact us at http://rashapay.com//about.php?#contactus
 
 
 if __name__ == "__main__" :
