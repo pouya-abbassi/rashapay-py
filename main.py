@@ -19,7 +19,7 @@ __status__ = "Production"
 
 
 def rashapay():
-	import urllib, json, random	# Used for sending request to rashapay webservice
+	import urllib                   # Used for sending request to rashapay webservice
 	import json			# Used for parsing json object
 	import random			# Used for generating random orderID
 
