@@ -109,11 +109,15 @@ a {
 .main-content img {
   max-width: 100%; }
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+  direction: rtl;
+  text-align: right;
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: normal;
   color: #159957; }
 .main-content p {
+  direction: rtl;
+  text-align: right;
   margin-bottom: 1em; }
 .main-content code {
   padding: 2px 4px;
@@ -176,6 +180,8 @@ a {
   .main-content blockquote > :last-child {
     margin-bottom: 0; }
 .main-content table {
+  direction: rtl;
+  text-align: right;
   display: block;
   width: 100%;
   overflow: auto;
